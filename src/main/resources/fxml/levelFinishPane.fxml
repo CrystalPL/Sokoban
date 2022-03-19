@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.*?>
+<AnchorPane xmlns:fx="http://javafx.com/fxml/1" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity"
+            minWidth="-Infinity"
+            prefHeight="820.0" prefWidth="1455.0"
+            style="-fx-background-image: url('/img/gui/background/backgroundFinish.png')" stylesheets="/css/button.css"
+            xmlns="http://javafx.com/javafx/8.0.202-ea"
+            fx:controller="pl.crystalek.sokoban.controller.LevelFinishController">
+    <children>
+        <Label alignment="CENTER" layoutX="371.0" layoutY="296.0" prefHeight="65.0" prefWidth="264.0"
+               style="-fx-background-color: #bbbbbb;" text="Zdobyte punkty" textFill="#a10000">
+            <font>
+                <Font name="System Bold Italic" size="28.0"/>
+            </font>
+        </Label>
+        <Label alignment="CENTER" layoutX="109.0" layoutY="62.0" prefHeight="162.0" prefWidth="1240.0"
+               text="Gratulacje!" textFill="#bbbbbb">
+            <font>
+                <Font name="System Bold Italic" size="160.0"/>
+            </font>
+            <effect>
+                <DropShadow/>
+            </effect>
+        </Label>
+        <Button layoutX="602.0" layoutY="708.0" mnemonicParsing="false" onAction="#backToMenu" prefHeight="71.0"
+                prefWidth="253.0" text="Wróć do menu" textFill="WHITE">
+            <font>
+                <Font name="System Bold Italic" size="25.0"/>
+            </font>
+        </Button>
+        <Label fx:id="playTime" alignment="CENTER" layoutX="791.0" layoutY="419.0" prefHeight="65.0" prefWidth="264.0"
+               style="-fx-background-color: #bbbbbb;" textFill="#a10000">
+            <font>
+                <Font name="System Bold Italic" size="18.0"/>
+            </font>
+        </Label>
+        <Label alignment="CENTER" layoutX="371.0" layoutY="419.0" prefHeight="65.0" prefWidth="264.0"
+               style="-fx-background-color: #bbbbbb;" text="Czas gry" textFill="#a10000">
+            <font>
+                <Font name="System Bold Italic" size="28.0"/>
+            </font>
+        </Label>
+        <Label fx:id="gainedPoints" alignment="CENTER" layoutX="791.0" layoutY="296.0" prefHeight="65.0"
+               prefWidth="264.0" style="-fx-background-color: #bbbbbb;" textFill="#a10000">
+            <font>
+                <Font name="System Bold Italic" size="18.0"/>
+            </font>
+        </Label>
+        <Label alignment="CENTER" layoutX="371.0" layoutY="544.0" prefHeight="65.0" prefWidth="264.0"
+               style="-fx-background-color: #bbbbbb;" text="Liczba kroków" textFill="#a10000">
+            <font>
+                <Font name="System Bold Italic" size="28.0"/>
+            </font>
+        </Label>
+        <Label fx:id="stepsNumber" alignment="CENTER" layoutX="791.0" layoutY="544.0" prefHeight="65.0"
+               prefWidth="264.0" style="-fx-background-color: #bbbbbb;" textFill="#a10000">
+            <font>
+                <Font name="System Bold Italic" size="18.0"/>
+            </font>
+        </Label>
+    </children>
+</AnchorPane>

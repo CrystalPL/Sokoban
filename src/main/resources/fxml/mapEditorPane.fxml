@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.*?>
+<AnchorPane xmlns:fx="http://javafx.com/fxml/1" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity"
+            minWidth="-Infinity"
+            prefHeight="820.0" prefWidth="1457.0"
+            style="-fx-background-image: url('/img/gui/background/backgroundEditor.png')" stylesheets="/css/button.css"
+            xmlns="http://javafx.com/javafx/8.0.202-ea"
+            fx:controller="pl.crystalek.sokoban.controller.editor.MapEditorController">
+    <children>
+        <Button layoutX="8.0" layoutY="576.0" mnemonicParsing="false" onAction="#leave" prefHeight="37.0"
+                prefWidth="138.0" text="Opuść edytor" textFill="WHITE">
+            <font>
+                <Font name="System Bold Italic" size="16.0"/>
+            </font>
+        </Button>
+        <Button fx:id="saveMapButton" layoutX="8.0" layoutY="286.0" mnemonicParsing="false" prefHeight="37.0"
+                prefWidth="138.0" text="Zapisz mapę" textFill="WHITE">
+            <font>
+                <Font name="System Bold Italic" size="16.0"/>
+            </font>
+        </Button>
+        <Button layoutX="8.0" layoutY="383.0" mnemonicParsing="false" onAction="#showMapList" prefHeight="37.0"
+                prefWidth="138.0" text="Lista zapisanych map" textFill="WHITE">
+            <font>
+                <Font name="System Bold Italic" size="12.0"/>
+            </font>
+        </Button>
+        <Button layoutX="8.0" layoutY="335.0" mnemonicParsing="false" onAction="#resetMap" prefHeight="37.0"
+                prefWidth="138.0" text="Zresetuj mapę" textFill="WHITE">
+            <font>
+                <Font name="System Bold Italic" size="16.0"/>
+            </font>
+        </Button>
+        <AnchorPane fx:id="editedAreaPane" layoutX="160.0" layoutY="20.0" prefHeight="780.0" prefWidth="1289.0">
+            <children>
+                <GridPane fx:id="mapBox" gridLinesVisible="true" prefHeight="780.0" prefWidth="1170.0">
+                </GridPane>
+                <VBox fx:id="blockBox" alignment="CENTER" layoutX="1194.0" layoutY="160.0" prefHeight="460.0"
+                      prefWidth="71.0" spacing="20.0" style="-fx-background-color: #bbbbbb;"/>
+            </children>
+        </AnchorPane>
+        <Button fx:id="importMapButton" layoutX="8.0" layoutY="431.0" mnemonicParsing="false" prefHeight="37.0"
+                prefWidth="138.0" text="Import mapy" textFill="WHITE">
+            <font>
+                <Font name="System Bold Italic" size="16.0"/>
+            </font>
+        </Button>
+        <Button fx:id="exportMapButton" layoutX="8.0" layoutY="480.0" mnemonicParsing="false" prefHeight="37.0"
+                prefWidth="138.0" text="Eksport mapy" textFill="WHITE">
+            <font>
+                <Font name="System Bold Italic" size="16.0"/>
+            </font>
+        </Button>
+        <Button layoutX="8.0" layoutY="528.0" mnemonicParsing="false" onAction="#mapSettings" prefHeight="37.0"
+                prefWidth="138.0" text="Ustawienia mapy" textFill="WHITE">
+            <font>
+                <Font name="System Bold Italic" size="14.0"/>
+            </font>
+        </Button>
+    </children>
+</AnchorPane>

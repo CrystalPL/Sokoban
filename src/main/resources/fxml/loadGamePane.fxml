@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<AnchorPane xmlns:fx="http://javafx.com/fxml/1" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity"
+            minWidth="-Infinity"
+            prefHeight="820.0" prefWidth="1457.0"
+            style="-fx-background-image: url('/img/gui/background/background.png')" stylesheets="/css/button.css"
+            xmlns="http://javafx.com/javafx/8.0.202-ea"
+            fx:controller="pl.crystalek.sokoban.controller.load.LoadGameController">
+    <children>
+        <AnchorPane layoutX="477.0" layoutY="330.0" prefHeight="334.0" prefWidth="227.0"
+                    style="-fx-background-color: #bbbbbb;">
+            <children>
+                <ScrollPane hbarPolicy="NEVER" layoutX="14.0" layoutY="13.0" prefHeight="308.0" prefWidth="200.0"
+                            style="-fx-background-color: #a10000;" vbarPolicy="ALWAYS">
+                    <content>
+                        <VBox fx:id="mapBox" alignment="TOP_CENTER" prefHeight="308.0" prefWidth="189.0" spacing="10.0"
+                              style="-fx-background-color: #a10000;">
+                            <opaqueInsets>
+                                <Insets/>
+                            </opaqueInsets>
+                            <padding>
+                                <Insets bottom="20.0" left="20.0" right="20.0" top="20.0"/>
+                            </padding>
+                        </VBox>
+                    </content>
+                </ScrollPane>
+            </children>
+        </AnchorPane>
+        <Button layoutX="624.0" layoutY="707.0" mnemonicParsing="false" onAction="#back" prefHeight="68.0"
+                prefWidth="210.0" text="Powrót" textAlignment="CENTER" textFill="WHITE">
+            <font>
+                <Font name="System Bold Italic" size="29.0"/>
+            </font>
+        </Button>
+        <Label fx:id="mapInfoLabel" layoutX="477.0" layoutY="197.0" prefHeight="46.0" prefWidth="227.0" wrapText="true">
+            <font>
+                <Font name="System Bold Italic" size="12.0"/>
+            </font>
+        </Label>
+        <Button fx:id="deleteButton" disable="true" layoutX="867.0" layoutY="707.0" mnemonicParsing="false"
+                onAction="#delete" prefHeight="68.0" prefWidth="210.0" text="Usuń" textAlignment="CENTER"
+                textFill="WHITE">
+            <font>
+                <Font name="System Bold Italic" size="29.0"/>
+            </font>
+        </Button>
+        <Button fx:id="loadButton" disable="true" layoutX="380.0" layoutY="707.0" mnemonicParsing="false"
+                onAction="#loadButton" prefHeight="68.0" prefWidth="210.0" text="Wczytaj" textAlignment="CENTER"
+                textFill="WHITE">
+            <font>
+                <Font name="System Bold Italic" size="29.0"/>
+            </font>
+        </Button>
+        <AnchorPane layoutX="754.0" layoutY="330.0" prefHeight="334.0" prefWidth="227.0"
+                    style="-fx-background-color: #bbbbbb;">
+            <children>
+                <ScrollPane hbarPolicy="NEVER" layoutX="14.0" layoutY="13.0" prefHeight="308.0" prefWidth="200.0"
+                            style="-fx-background-color: #a10000;" vbarPolicy="ALWAYS">
+                    <content>
+                        <VBox fx:id="saveBox" alignment="TOP_CENTER" prefHeight="308.0" prefWidth="189.0" spacing="10.0"
+                              style="-fx-background-color: #a10000;">
+                            <opaqueInsets>
+                                <Insets/>
+                            </opaqueInsets>
+                            <padding>
+                                <Insets bottom="20.0" left="20.0" right="20.0" top="20.0"/>
+                            </padding>
+                        </VBox>
+                    </content>
+                </ScrollPane>
+            </children>
+        </AnchorPane>
+        <Label alignment="CENTER" layoutX="477.0" layoutY="263.0" prefHeight="46.0" prefWidth="227.0"
+               style="-fx-background-color: #bbbbbb;" text="Wybierz mapę" textFill="#a10000">
+            <font>
+                <Font name="System Bold Italic" size="27.0"/>
+            </font>
+        </Label>
+        <Label alignment="CENTER" layoutX="754.0" layoutY="263.0" prefHeight="46.0" prefWidth="227.0"
+               style="-fx-background-color: #bbbbbb;" text="Wybierz zapis" textFill="#a10000">
+            <font>
+                <Font name="System Bold Italic" size="27.0"/>
+            </font>
+        </Label>
+        <Label fx:id="saveInfoLabel" layoutX="754.0" layoutY="175.0" prefHeight="80.0" prefWidth="240.0"
+               wrapText="true">
+            <font>
+                <Font name="System Bold Italic" size="12.0"/>
+            </font>
+        </Label>
+    </children>
+</AnchorPane>

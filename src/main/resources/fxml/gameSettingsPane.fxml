@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.*?>
+<AnchorPane xmlns:fx="http://javafx.com/fxml/1" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity"
+            minWidth="-Infinity"
+            prefHeight="820.0" prefWidth="1457.0"
+            style="-fx-background-image: url('/img/gui/background/background.png')" stylesheets="/css/button.css"
+            xmlns="http://javafx.com/javafx/8.0.202-ea"
+            fx:controller="pl.crystalek.sokoban.controller.GameSettingsController">
+    <children>
+        <Button layoutX="612.0" layoutY="714.0" mnemonicParsing="false" onAction="#back" prefHeight="79.0"
+                prefWidth="234.0" text="Powrót" textFill="WHITE">
+            <font>
+                <Font name="System Bold Italic" size="35.0"/>
+            </font>
+        </Button>
+        <Label alignment="CENTER" layoutX="449.0" layoutY="272.0" prefHeight="79.0" prefWidth="234.0"
+               style="-fx-background-color: #bbbbbb;" text="Dźwięk" textFill="#a10000">
+            <font>
+                <Font name="System Bold Italic" size="30.0"/>
+            </font>
+        </Label>
+        <Label alignment="CENTER" layoutX="449.0" layoutY="375.0" prefHeight="79.0" prefWidth="234.0"
+               style="-fx-background-color: #bbbbbb;" text="Sterowanie" textFill="#a10000">
+            <font>
+                <Font name="System Bold Italic" size="30.0"/>
+            </font>
+        </Label>
+        <Label alignment="CENTER" layoutX="449.0" layoutY="482.0" prefHeight="79.0" prefWidth="234.0"
+               style="-fx-background-color: #bbbbbb;" text="Jasność" textFill="#a10000">
+            <font>
+                <Font name="System Bold Italic" size="30.0"/>
+            </font>
+        </Label>
+        <Button fx:id="soundButton" layoutX="780.0" layoutY="272.0" mnemonicParsing="false" onAction="#soundButton"
+                prefHeight="79.0" prefWidth="243.0" style="-fx-background-color: #bbbbbb;" text="Włączony"
+                textFill="#a10000">
+            <font>
+                <Font name="System Bold Italic" size="30.0"/>
+            </font>
+        </Button>
+        <Button fx:id="controlButton" layoutX="780.0" layoutY="375.0" mnemonicParsing="false" onAction="#control"
+                prefHeight="79.0" prefWidth="243.0" style="-fx-background-color: #bbbbbb;" text="WSAD"
+                textFill="#a10000">
+            <font>
+                <Font name="System Bold Italic" size="30.0"/>
+            </font>
+        </Button>
+        <Slider fx:id="brightnessSlider" blockIncrement="20.0" layoutX="780.0" layoutY="482.0" majorTickUnit="10.0"
+                max="200.0" prefHeight="79.0" prefWidth="243.0" showTickLabels="true"
+                style="-fx-background-color: #bbbbbb;" value="100.0"/>
+    </children>
+</AnchorPane>

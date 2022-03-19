@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<AnchorPane xmlns:fx="http://javafx.com/fxml/1" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity"
+            minWidth="-Infinity"
+            prefHeight="400.0" prefWidth="711.0"
+            style="-fx-background-image: url('/img/gui/background/backgroundDialog.png')" stylesheets="/css/button.css"
+            xmlns="http://javafx.com/javafx/8.0.202-ea"
+            fx:controller="pl.crystalek.sokoban.controller.DialogController">
+    <children>
+        <Label fx:id="headerTextLabel" alignment="CENTER" layoutX="19.0" layoutY="14.0" prefHeight="54.0"
+               prefWidth="674.0" style="-fx-background-color: #bbbbbb;" textFill="#a10000">
+            <font>
+                <Font name="System Bold Italic" size="22.0"/>
+            </font>
+        </Label>
+        <Button layoutX="615.0" layoutY="356.0" mnemonicParsing="false" onAction="#ok" prefHeight="13.0"
+                prefWidth="82.0" text="OK" textFill="WHITE">
+            <font>
+                <Font name="System Bold Italic" size="14.0"/>
+            </font>
+        </Button>
+        <Label fx:id="contentTextLabel" alignment="CENTER" layoutX="19.0" layoutY="88.0" prefHeight="260.0"
+               prefWidth="674.0" style="-fx-background-color: #bbbbbb;" textFill="#a10000" wrapText="true">
+            <font>
+                <Font name="System Bold Italic" size="22.0"/>
+            </font>
+        </Label>
+        <ImageView fx:id="infoImageView" fitHeight="54.0" fitWidth="58.0" layoutX="635.0" layoutY="14.0"
+                   pickOnBounds="true" preserveRatio="true"/>
+    </children>
+</AnchorPane>

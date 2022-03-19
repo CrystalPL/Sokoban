@@ -1,0 +1,50 @@
+blocks/bomb.png
+blocks/bricks.png
+blocks/crate.png
+blocks/eraser.png
+blocks/grass.png
+blocks/player.png
+blocks/tree.png
+gui/error.png
+gui/info.png
+gui/warning.png
+buttonClick.wav
+defeat.wav
+victory.wav
+changeNamePane.fxml
+chooseByDifficultyPane.fxml
+confirmationPane.fxml
+dialogPane.fxml
+gameModeChoicePane.fxml
+gameModuleChoicePane.fxml
+gameSettingsPane.fxml
+loadMapToEdit.fxml
+loadGamePane.fxml
+mapEditorPane.fxml
+gamePane.fxml
+ranking.fxml
+rankingDetails.fxml
+sokobanMainPane.fxml
+levelFinishPane.fxml
+levelLostPane.fxml
+mapSettingsPane.fxml
+poziom 1.txt
+poziom 2.txt
+poziom 3.txt
+poziom 4.txt
+poziom 5.txt
+poziom 6.txt
+poziom 7.txt
+poziom 8.txt
+poziom 9.txt
+poziom 10.txt
+poziom 11.txt
+poziom 12.txt
+poziom 13.txt
+poziom 14.txt
+poziom 15.txt
+poziom 16.txt
+poziom 17.txt
+poziom 18.txt
+poziom 19.txt
+poziom 20.txt

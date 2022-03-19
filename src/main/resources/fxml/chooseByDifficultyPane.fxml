@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.*?>
+<AnchorPane xmlns:fx="http://javafx.com/fxml/1" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity"
+            minWidth="-Infinity"
+            prefHeight="820.0" prefWidth="1457.0"
+            style="-fx-background-image: url('/img/gui/background/background.png')" stylesheets="/css/button.css"
+            xmlns="http://javafx.com/javafx/8.0.202-ea"
+            fx:controller="pl.crystalek.sokoban.controller.game.ChooseByDifficultyController">
+    <children>
+        <Button layoutX="612.0" layoutY="452.0" mnemonicParsing="false" onAction="#hardLevel" prefHeight="79.0"
+                prefWidth="234.0" text="Trudny" textFill="WHITE">
+            <font>
+                <Font name="System Bold Italic" size="35.0"/>
+            </font>
+        </Button>
+        <Button layoutX="612.0" layoutY="679.0" mnemonicParsing="false" onAction="#back" prefHeight="79.0"
+                prefWidth="234.0" text="Powrót" textFill="WHITE">
+            <font>
+                <Font name="System Bold Italic" size="35.0"/>
+            </font>
+        </Button>
+        <Button layoutX="612.0" layoutY="359.0" mnemonicParsing="false" onAction="#mediumLevel" prefHeight="79.0"
+                prefWidth="234.0" text="Normalny" textFill="WHITE">
+            <font>
+                <Font name="System Bold Italic" size="31.0"/>
+            </font>
+        </Button>
+        <Button layoutX="612.0" layoutY="267.0" mnemonicParsing="false" onAction="#easyLevel" prefHeight="79.0"
+                prefWidth="234.0" text="Łatwy" textFill="WHITE">
+            <font>
+                <Font name="System Bold Italic" size="33.0"/>
+            </font>
+        </Button>
+        <Button fx:id="startButton" disable="true" layoutX="612.0" layoutY="548.0" mnemonicParsing="false"
+                onAction="#start" prefHeight="79.0" prefWidth="234.0" text="Start" textFill="WHITE">
+            <font>
+                <Font name="System Bold Italic" size="33.0"/>
+            </font>
+        </Button>
+    </children>
+</AnchorPane>

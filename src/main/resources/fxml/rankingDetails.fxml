@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.*?>
+<AnchorPane xmlns:fx="http://javafx.com/fxml/1" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity"
+            minWidth="-Infinity"
+            prefHeight="820.0" prefWidth="1457.0"
+            style="-fx-background-image: url('/img/gui/background/background.png')" stylesheets="/css/button.css"
+            xmlns="http://javafx.com/javafx/8.0.202-ea"
+            fx:controller="pl.crystalek.sokoban.controller.RankingDetailsController">
+    <children>
+        <Button layoutX="599.0" layoutY="692.0" mnemonicParsing="false" onAction="#back" prefHeight="79.0"
+                prefWidth="260.0" text="Powrót" textAlignment="CENTER" textFill="WHITE">
+            <font>
+                <Font name="System Bold Italic" size="30.0"/>
+            </font>
+        </Button>
+        <Label alignment="CENTER" layoutX="495.0" layoutY="330.0" prefHeight="40.0" prefWidth="189.0"
+               style="-fx-background-color: #bbbbbb;" text="Liczba kroków" textFill="#a10000">
+            <font>
+                <Font name="System Bold Italic" size="18.0"/>
+            </font>
+        </Label>
+        <Label alignment="CENTER" layoutX="495.0" layoutY="386.0" prefHeight="40.0" prefWidth="189.0"
+               style="-fx-background-color: #bbbbbb;" text="Punkty za czas" textFill="#a10000">
+            <font>
+                <Font name="System Bold Italic" size="17.0"/>
+            </font>
+        </Label>
+        <Label alignment="CENTER" layoutX="495.0" layoutY="273.0" prefHeight="40.0" prefWidth="189.0"
+               style="-fx-background-color: #bbbbbb;" text="Czas gry" textFill="#a10000">
+            <font>
+                <Font name="System Bold Italic" size="18.0"/>
+            </font>
+        </Label>
+        <Label fx:id="stepsNumberLabel" alignment="CENTER" layoutX="773.0" layoutY="330.0" prefHeight="40.0"
+               prefWidth="240.0" style="-fx-background-color: #bbbbbb;" textFill="#a10000">
+            <font>
+                <Font name="System Bold Italic" size="24.0"/>
+            </font>
+        </Label>
+        <Label fx:id="pointsForTimeLabel" alignment="CENTER" layoutX="773.0" layoutY="386.0" prefHeight="40.0"
+               prefWidth="240.0" style="-fx-background-color: #bbbbbb;" textFill="#a10000">
+            <font>
+                <Font name="System Bold Italic" size="24.0"/>
+            </font>
+        </Label>
+        <Label fx:id="playTimeLabel" alignment="CENTER" layoutX="773.0" layoutY="273.0" prefHeight="40.0"
+               prefWidth="240.0" style="-fx-background-color: #bbbbbb;" textFill="#a10000">
+            <font>
+                <Font name="System Bold Italic" size="24.0"/>
+            </font>
+        </Label>
+    </children>
+</AnchorPane>

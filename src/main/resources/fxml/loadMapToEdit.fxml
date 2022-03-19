@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="820.0"
+            prefWidth="1457.0" style="-fx-background-image: url('/img/gui/background/background.png')"
+            stylesheets="/css/button.css" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="pl.crystalek.sokoban.controller.load.LoadMapToEditController">
+    <AnchorPane layoutX="615.0" layoutY="277.0" prefHeight="334.0" prefWidth="227.0"
+                style="-fx-background-color: #bbbbbb;">
+        <ScrollPane hbarPolicy="NEVER" layoutX="14.0" layoutY="13.0" prefHeight="308.0" prefWidth="200.0"
+                    style="-fx-background-color: #a10000;" vbarPolicy="ALWAYS">
+            <VBox fx:id="mapBox" alignment="TOP_CENTER" prefHeight="308.0" prefWidth="189.0" spacing="10.0"
+                  style="-fx-background-color: #a10000;">
+                <opaqueInsets>
+                    <Insets/>
+                </opaqueInsets>
+                <padding>
+                    <Insets bottom="20.0" left="20.0" right="20.0" top="20.0"/>
+                </padding>
+            </VBox>
+        </ScrollPane>
+    </AnchorPane>
+    <Button layoutX="624.0" layoutY="664.0" mnemonicParsing="false" onAction="#back" prefHeight="68.0"
+            prefWidth="210.0" text="Powrót" textAlignment="CENTER" textFill="WHITE">
+        <font>
+            <Font name="System Bold Italic" size="29.0"/>
+        </font>
+    </Button>
+    <Label fx:id="mapInfoLabel" layoutX="616.0" layoutY="199.0" prefHeight="46.0" prefWidth="227.0" wrapText="true">
+        <font>
+            <Font name="System Bold Italic" size="12.0"/>
+        </font>
+    </Label>
+    <Button fx:id="deleteButton" disable="true" layoutX="866.0" layoutY="664.0" mnemonicParsing="false"
+            onAction="#delete" prefHeight="68.0" prefWidth="210.0" text="Usuń" textAlignment="CENTER"
+            textFill="WHITE">
+        <font>
+            <Font name="System Bold Italic" size="29.0"/>
+        </font>
+    </Button>
+    <Button fx:id="loadButton" disable="true" layoutX="380.0" layoutY="664.0" mnemonicParsing="false"
+            onAction="#load" prefHeight="68.0" prefWidth="210.0" text="Wczytaj" textAlignment="CENTER"
+            textFill="WHITE">
+        <font>
+            <Font name="System Bold Italic" size="29.0"/>
+        </font>
+    </Button>
+</AnchorPane>

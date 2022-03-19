@@ -1,0 +1,11 @@
+.button {
+    -fx-background-color: #d20524;
+}
+
+.button:hover {
+    -fx-background-insets: -2;
+    -fx-background-radius: 3px, 3px, 2px, 1px;
+    -fx-padding: 0.333333em 0.666667em 0.333333em 0.666667em;
+    -fx-alignment: CENTER;
+    -fx-content-display: LEFT;
+}
